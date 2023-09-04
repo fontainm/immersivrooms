@@ -1,0 +1,89 @@
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <title>IMMERSIVROOMS</title>
+
+  <!-- Scripts -->
+  <script src="./lib/scripts/aframe-v1.0.0.min.js"></script>
+  <script src="./lib/scripts/aframe-particle-system-component.min.js"></script>
+  <script src="./lib/scripts/aframe-extras.min.js"></script>
+  <script src="./lib/scripts/jquery-3.4.1.min.js"></script>
+
+  <!-- Room Scripts -->
+  <script src="./js/rain.js"></script>
+  <script src="./js/tunnel.js"></script>
+  <script src="./js/draw.js"></script>
+  <script src="./js/pipes.js"></script>
+  <script src="./js/fish.js"></script>
+  <script src="./js/credits.js"></script>
+
+  <!-- Main Script -->
+  <script src="./js/main.js"></script>
+
+  <!-- Style -->
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../home/img/favicon.ico">
+
+</head>
+
+<body>
+  <a-scene shadow="type: pcf" loading-screen="dotsColor: white; backgroundColor: black">
+    <a-assets>
+      <!-- Load Images -->
+      <img id="sky" src="./lib/img/sky.jpg">
+      <img id="skymap" src="./lib/img/skymap.jpg" crossOrigin="anonymous">
+      <img id="arrow" src="./lib/img/arrow.png">
+      <img id="skymapFish" src="./lib/img/sea.jpg">
+      <img id="prevMain" src="./lib/preview/main.jpg" crossOrigin="anonymous">
+      <img id="prevRain" src="./lib/preview/rain.jpg">
+      <img id="prevTunnel" src="./lib/preview/tunnel.jpg">
+      <img id="prevDraw" src="./lib/preview/draw.jpg">
+      <img id="prevFish" src="./lib/preview/fish.jpg">
+      <img id="prevPipes" src="./lib/preview/pipes.jpg">
+
+      <!-- Load Models -->
+      <a-asset-item id="fish" src="./lib/models/scene.gltf"></a-asset-item>
+
+      <!-- Load SFX -->
+      <audio id="ambient" src="./lib/sfx/ambient.mp3">
+      <audio id="rain" src="./lib/sfx/rain.mp3">
+      <audio id="tunnel" src="./lib/sfx/tunnel.mp3">
+      <audio id="lines" src="./lib/sfx/lines.mp3">
+      <audio id="interaction" src="./lib/sfx/interaction.mp3">
+      <audio id="water" src="./lib/sfx/underwater.mp3">
+      <audio id="pop" src="./lib/sfx/ok.mp3">
+      <audio id="open" src="./lib/sfx/open.mp3">
+    </a-assets>
+
+    <!-- Define SFX -->
+    <a-entity id="popsound" sound="src: #pop; poolSize: 3"></a-entity>
+    <a-entity id="opensound" sound="src: #open; poolSize: 2"></a-entity>
+    <a-entity id="ambientsound" sound="src: #ambient; loop: true; poolSize: 3; volume: 0.7"></a-entity>
+    <a-entity id="rainsound" sound="src: #rain; loop: true;"></a-entity>
+    <a-entity id="tunnelsound" sound="src: #tunnel; loop: true;"></a-entity>
+    <a-entity id="linesSound" sound="src: #lines; loop: true;"></a-entity>
+    <a-entity id="interactionSound" sound="src: #interaction; loop: true;"></a-entity>
+    <a-entity id="watersound" sound="src: #water; loop: true;"></a-entity>
+
+    <!-- SCENE TO INCLUDE -->
+    <a-entity id="includedScene" rotation="0 0 0">
+    </a-entity>
+
+    <!-- CURSOR -->
+    <a-entity id="camera" camera start loader look-controls rotation-reader position="0 1 0">
+      <a-cursor id="vrCursor" raycaster="objects: .clickable" color="#fff" material="opacity: 0.8" cursor="fuse: true;">
+        <a-entity id="vrSplash" spinner visible="false"></a-entity>
+      </a-cursor>
+    </a-entity>
+
+  </a-scene>
+
+  <script>
+    $(function () {
+      $("#includedScene").load("./scenes/intro.html");
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+
+  <!-- SCENE & LIGHTING -->
+  <a-entity geometry="primitive: cylinder; openEnded: true; radius: 6; height: 6" position="0 2.5 0" material="side: double; color: #111"></a-entity>
+  <a-circle material="shader: standard;" shadow="receive: true" radius="5" rotation="-90 0 0" color="#333" position="0 0 0"></a-circle>
+  <a-plane src="#sky" height="13" width="13" rotation="-270 0 0" position="0 5 0"></a-plane>
+  <!-- <a-circle material="shader: standard;"  radius="0.1" rotation="90 0 0" color="#333" position="0 4.3 0"></a-circle> -->
+  <a-light type="ambient" intensity="0.6" color="white" position="0 4 0">
+    <!-- <a-circle material="shader: flat;" src="#lamp" radius="0.6" rotation="90 0 0"></a-circle> -->
+  </a-light>
+
+  <!-- DOORS -->
+  <a-entity door="color: tomato; header: TUNNEL; link: tunnel" position="-5 1 0" rotation="0 90 0"></a-entity>
+  <a-entity door="color: cyan; header: FISH; link: fish" position="-3.5 1 -3.5" rotation="0 45 0"></a-entity>
+  <a-entity door="color: limegreen; header: DRAW; link: draw" position="0 1 -5"></a-entity>
+  <a-entity door="color: yellow; header: RAIN; link: rain" position="3.5 1 -3.5" rotation="0 -45 0"></a-entity>
+  <a-entity door="color: violet; header: PIPES; link: pipes" position="5 1 0" rotation="0 -90 0"></a-entity>
+
+  <a-entity door="color: white; header: CREDITS; link: credits" position="0 1 5" rotation="0 180 0"></a-entity>
+
+  <!-- HELP -->
+  <!-- <a-entity light="type: point; color: white; distance: 2; intensity: 2" position="0 2 5"></a-entity>
+  <a-entity geometry="primitive: ring" material="color: white" radius="1" rotation="0 180 0" position="0 2 5"></a-entity>
+  <a-entity text="value: ?; font: https://cdn.aframe.io/fonts/KelsonSans.fnt; align: center; color: white" position="0 2 5" rotation="0 180 0" scale="15 15 1"></a-entity> -->
+  
+  <!-- <a-entity introcylinder="transp: 1" geometry="primitive: cylinder; openEnded: true; radius: 3; height: 12" material="side: double; color: #111;"></a-entity> -->
+        

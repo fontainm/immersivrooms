@@ -1,0 +1,124 @@
+#content {
+    display: none;;
+}
+
+#page-top {
+    background-color: #151515;
+}
+
+#loadingDiv {
+    background: transparent;
+    width: 100%;
+    height: 100%;   
+}
+
+.spinner-border {
+    width: 24px;
+    height: 24px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+}
+
+.masthead h1 {
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-color: white;
+    background: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: white;
+    letter-spacing: normal;
+}
+
+.masthead h2 {
+    letter-spacing: 5px;
+    max-width: 100%;
+}
+
+.navbar-brand {
+    font-family: 'Raleway'
+}
+
+.text-vr {
+    background: -webkit-linear-gradient(rgba(0, 175, 153, 1), rgba(255, 255, 255, 0));
+    background: #00AF99;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.frameworks img {
+    max-width: 100%;
+}
+
+.about-section {
+    padding-top: 2rem;
+    background: #f00;
+}
+
+.about-section p {    
+    margin-bottom: 2rem;
+}
+
+.projects-section {
+    padding: 2rem 0;
+    /* background-color: #111 !important; */
+}
+
+.contact-section {
+    padding: 0;
+}
+
+.contact-section .social {
+    margin-top: 0 !important;
+}
+
+.frameworks-table img {
+    height: 60px !important;
+    margin: 5px !important;
+    vertical-align: middle;
+}
+
+.frameworks-table img:hover {
+    opacity: 0.7;
+}
+
+.btn-secondary {
+    background-color: #444;
+    opacity: 0.8;
+}
+
+.btn:disabled {
+    background: #888;
+}
+
+.compTable td {
+    padding: 1rem;
+}
+
+.compTable tr {
+    border-bottom: thin solid;
+}
+
+.compTable .fab {
+    font-size: 1.8rem;
+}
+
+footer {
+    padding-top: 1rem;
+}
+
+.mw-25 {
+    max-width: 50%;
+}
+
+@media (min-device-width: 768px) {
+    .anhang {
+        max-width: 50%;
+    }  
+}
+
+.video {
+    cursor: pointer;
+}

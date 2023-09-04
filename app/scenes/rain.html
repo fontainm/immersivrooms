@@ -1,0 +1,14 @@
+<a-entity rain></a-entity>
+<a-sky color="#090910"></a-sky>
+
+<a-entity id="sky"
+geometry="primitive: sphere; radius: 30; phiLength: 360; phiStart: 0; thetaLength: 90"
+material="shader: flat; side: back; height: 2048; src: #skymap; width: 2048"
+></a-entity>
+
+<!-- BACKDOOR -->
+<a-entity exitsign></a-entity>
+<a-entity door="color: midnightblue; header: EXIT; link: main" class="clickable" position="0 1 5" rotation="0 180 0">
+</a-entity>
+
+<a-entity light="type: ambient; color: #FFF; intensity: 2"></a-entity>

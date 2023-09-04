@@ -1,0 +1,31 @@
+<!-- USER INTERFACE START-->
+<a-plane window id="ui-start" color="#222" height="0.8" width="1.7" position="0 1 -1.4" visible="true">
+    <a-plane material="color: rgb(0, 175, 153);" height="0.85" width="1.75" position="0 0 -0.01"></a-plane>
+    <a-text value="STEUERUNG" color="rgb(0, 175, 153)" shader="msdf" font="https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/raleway/Raleway-ExtraBold.json" align="center" position="0 0.1 0"></a-text>
+    <a-text shader="msdf" font="https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/nunito/Nunito-Light.json" 
+            value="Fixiere deinen Blick fuer zwei Sekunden auf ein Interface-Element, um damit zu interagieren." 
+            width="1.3" align="center"></a-text>
+    <a-plane button="name: start" id="btnStart" class="clickable" color="#222" height="0.15" width="0.7" position="-0 -0.2 0.02">
+      <a-plane material="color: rgb(0, 175, 153)" height="0.18" width="0.73" position="0 0 -0.01"></a-plane>
+      <a-plane id="startFiller" material="color: rgb(0, 175, 153)" 
+                height="0.16" width="0.1" position="0 0 0.01"></a-plane>
+      <a-text value="START" color="white" align="center" width="2" position="0 -0.06 0.02" shader="msdf"
+              font="https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/raleway/Raleway-ExtraBold.json"></a-text>
+    </a-plane>
+  </a-plane>
+
+<!-- USER INTERFACE WARNING-->
+<a-plane window id="ui-warning" visible="false" color="#222" height="1.1" width="1.7" position="0 1 -1.5">
+    <a-plane material="color: rgb(0, 175, 153)" height="1.15" width="1.75" position="0 0 -0.01"></a-plane>
+    <a-text value="ACHTUNG" color="rgb(0, 175, 153)" shader="msdf" font="https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/raleway/Raleway-ExtraBold.json" align="center" position="0 0.25 0"></a-text>
+    <a-text shader="msdf" font="https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/nunito/Nunito-Light.json" 
+            value="Bei manchen Menschen treten beim Ansehen von Virtual-Reality-Inhalten Kinetose, Uebelkeit, Orientierungsverlust, verschwommene Sicht oder andere Beschwerden auf. Sollten bei Ihnen solche Symptome auftreten, beenden Sie die Nutzung sofort und nehmen Sie das VR-Headset ab." 
+            width="1.3" align="center"></a-text>
+    <a-plane button="name: warning" id="btnWarning" class="" color="#222" height="0.15" width="0.7" position="-0 -0.35 0.02">
+      <a-plane material="color: rgb(0, 175, 153)" height="0.18" width="0.73" position="0 0 -0.01"></a-plane>
+      <a-plane id="warningFiller" material="color: rgb(0, 175, 153)" 
+                height="0.16" width="0.1" position="0 0 0.01"></a-plane>
+      <a-text value="OK" color="white" align="center" width="2" position="0 -0.06 0.02" shader="msdf"
+              font="https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/raleway/Raleway-ExtraBold.json"></a-text>
+    </a-plane>
+</a-plane>

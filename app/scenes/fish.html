@@ -1,0 +1,15 @@
+<a-sky src="#skymapFish"></a-sky>
+    
+<a-entity rotation="0 -45 0">
+
+    <a-entity id="fishpivot" rotation="0 0 0">
+        <a-entity fish gltf-model="#fish" rotation="0 90 0" position="0 0 -2" animation-mixer></a-entity>
+    </a-entity>
+
+</a-entity>
+
+<a-entity light="type: ambient; color: #FFF; intensity: 2"></a-entity>
+
+<!-- BACKDOOR -->
+<a-entity exitsign></a-entity>
+<a-entity door="color: midnightblue; header: EXIT; link: main" class="clickable" position="0 1 5" rotation="0 180 0"></a-entity>
